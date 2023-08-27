@@ -2,14 +2,14 @@ package Model;
 
 import java.util.ArrayList;
 
-public class Food_item implements  item{
+public class Food_item extends item{
     /* food item attributes */
     private int id;
     private String food_item_name;
     private String food_item_ingredients;
     private float food_item_cost;
     private float food_item_discount;
-    private int gst;
+
     ArrayList<String> specifications=new ArrayList<>();
     //constructor with specified ingredients:-
     public Food_item(int id, String name, String ingredients, float cost, float discount)
@@ -69,16 +69,6 @@ public class Food_item implements  item{
         return this.food_item_discount;
     }
     //overriden functions:-
-        @Override
-        public void set_gst(int gst)
-        {
-            this.gst=gst;
-        }
-        @Override
-        public int get_gst()
-        {
-            return gst;
-        }
         @Override
         public void add_specifications(String sp )
         {

@@ -1,11 +1,18 @@
 package Model;
 
-public interface item {
+public abstract class item {
+    private int gst;
+    public void set_gst(int gst)
+    {
+        this.gst=gst;
+    }
 
-    void set_gst(int gst);
-    int get_gst();
-    void add_specifications(String s );
-    void remove_specification(int specificaton_no);
-    void display_specificatons();
+    public int get_gst()
+    {
+        return gst;
+    }
+    public abstract void add_specifications(String s );
+    public abstract void remove_specification(int specificaton_no);
+    public abstract void display_specificatons();
 
 }

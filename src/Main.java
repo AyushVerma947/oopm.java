@@ -203,6 +203,7 @@ public class Main {
                     } else {
                         System.out.println("Array is full. Cannot create more Orders.");
                     }
+                    break;
                 case 6:
                     for (int i = 0; i <= currentOrdersCount - 1; i++) {
                         orders_array[i].display_customer_orders();

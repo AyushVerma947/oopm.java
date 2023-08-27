@@ -27,7 +27,7 @@ some of the attributes from the Person class. And the class representing the "Pe
  * address:
  */
 
-public class Customer implements person{
+public class Customer extends person{
     /* Customer attributes */
     private int id;
 
@@ -166,16 +166,7 @@ public class Customer implements person{
         return this.Address;
     }
     //OVERTIDDEN FUNCTIONS:-
-    @Override
-    public void set_age(int age)
-    {
-        this.age=age;
-    }
-    @Override
-    public int get_age()
-    {
-        return age;
-    }
+
     @Override
     public void set_nationality(String nationality)
     {
